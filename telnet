@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt install telnetd openbsd-inetd -y
+sudo systemctl enable openbsd-inetd
+sudo systemctl start openbsd-inetd
+sudo systemctl status openbsd-inetd
+telnet localhost
